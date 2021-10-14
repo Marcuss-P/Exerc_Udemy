@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\marco\eclipse-workspace\Exercicios_Udemy\Exerc_Comp"/>
+			<item value="C:\Users\marco\eclipse-workspace\Exercicios_Udemy\Exerc_6_Java"/>
+			<item value="C:\Users\marco\eclipse-workspace\Exercicios_Udemy\Exerc_5_Java"/>
+			<item value="C:\Users\marco\eclipse-workspace\Exercicios_Udemy\Exerc_4_Java"/>
+			<item value="C:\Users\marco\eclipse-workspace\Exercicios_Udemy\Exerc_3_Java"/>
+			<item value="C:\Users\marco\eclipse-workspace\Exercicios_Udemy\Exer_Static"/>
+			<item value="C:\Users\marco\eclipse-workspace\Exercicios_Udemy\Exer_Java_OO"/>
+			<item value="C:\Users\marco\eclipse-workspace\Exercicios_Udemy\Exer_7_Java"/>
+			<item value="C:\Users\marco\eclipse-workspace\Exercicios_Udemy\Exer_2_Java"/>
+		</list>
+	</section>
+</section>
