@@ -1,11 +1,7 @@
 INDEX VERSION 1.131+C:\Users\marco\eclipse-workspace\Exercicios_Udemy\.metadata\.plugins\org.eclipse.jdt.core
-1885967236.index
-3385010798.index
-2215349093.index
-547619383.index
-3569752790.index
 3077047821.index
-462939851.index
-4250188307.index
-893479892.index
 44038603.index
+3569752790.index
+2215349093.index
+3385010798.index
+530237811.index
