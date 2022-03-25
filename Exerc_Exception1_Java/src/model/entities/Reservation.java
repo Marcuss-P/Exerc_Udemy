@@ -4,6 +4,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
+import model.exceptions.DomainExceptions;
+
 public class Reservation {
 
 	private Integer roomNumber;
@@ -12,7 +14,10 @@ public class Reservation {
 	
 	private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 	
-	public Reservation(Integer roomNumber, Date checkIn, Date checkOut) {
+	public Reservation(Integer roomNumber, Date checkIn, Date checkOut){
+		if (!checkOut.after(checkIn)) {
+			throw new DomainExceptions( "Check-out date must be after check-in date");
+		}
 		this.roomNumber = roomNumber;
 		this.checkIn = checkIn;
 		this.checkOut = checkOut;
@@ -40,22 +45,22 @@ public class Reservation {
 		
 	}
 	
-	public String updateDate(Date checkIn, Date checkOut) {
+	public void updateDate(Date checkIn, Date checkOut){
 		
 		Date now = new Date();
 		//se alguma data for anterior a data de agr
 		if(checkIn.before(now) || checkOut.before(now)) {
-			return "Reservation dates for update must be future dates";
+			//IllegalArgumentException metodo ja criado pelo java
+			throw new DomainExceptions( "Reservation dates for update must be future dates");
 		} // nn se usa o else if pois o return quebra o if caso atenda aos requisitos
 		if (!checkOut.after(checkIn)) {
-			return "Check-out date must be after check-in date";
+			throw new DomainExceptions( "Check-out date must be after check-in date");
 		}
 		
 		//checkIn of the object receive the checkIn of the argument
 		this.checkIn = checkIn;
 		this.checkOut = checkOut;
 		//retorna nulo pois caso as String tenha dado falso o updateDate nn deve ser String
-		return null;
 		
 	}
 	
