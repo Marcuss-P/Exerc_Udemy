@@ -4,6 +4,8 @@ public class Company extends TaxPayer{
 
 	private int numberEmployee;
 
+	
+	//Downcasting
 	public Company(String nome, Double anualIncome, int numberEmployee) {
 		super(nome, anualIncome);
 		this.numberEmployee = numberEmployee;
